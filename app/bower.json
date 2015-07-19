@@ -1,0 +1,22 @@
+{
+  "name": "tv-app",
+  "version": "0.0.0",
+  "authors": [
+    "Stewart Duffy <stewart.duffy@sparkventures.co.nz>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "angular-sanitize": "~1.4.3",
+    "angular-route": "~1.4.3",
+    "lodash": "~3.10.0",
+    "bootstrap-sass-official": "~3.3.5"
+  }
+}

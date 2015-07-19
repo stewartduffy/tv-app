@@ -1,0 +1,22 @@
+<table class="table">
+    <thead>
+        <tr class="text-center">
+            <th>ID</th>
+            <th>Show Image</th>
+            <th>Show Title</th>
+            <th>Genre</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody ng-repeat="tvShow in tvShows">
+        <tr ng-click="openShowDetails(tvShow);">
+            <th scope="row">{{tvShow.id}}</th>
+            <td>
+                <img ng-src="{{tvShow.image.medium}}" alt="{{tvShow.name}}"/>
+            </td>
+            <td>{{tvShow.name}}</td>
+            <td><strong>{{tvShow.genres.join(', ')}}</strong></td>
+            <td class="small" ng-bind-html="trustAsHtml(tvShow.summary)"></td>
+        </tr>
+    </tbody>
+</table>
